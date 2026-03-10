@@ -103,3 +103,83 @@
 }
 
 }
+/* Base CSS aapne already diya */
+
+/* Medium screens (tablet) */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 30px; /* gap thoda kam karke mobile me spacing adjust */
+    width: 90%; /* container thoda bada kar diya taake side margins kam ho */
+    padding: 30px;
+  }
+
+  .contact-info h1 {
+    font-size: 30px;
+  }
+
+  .contact-info p {
+    font-size: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .contact-form button {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 600px) {
+  .contact-container {
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .contact-info h1 {
+    font-size: 26px;
+  }
+
+  .contact-info p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .contact-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* Extra small screens (very small mobile) */
+@media (max-width: 400px) {
+  .contact-info h1 {
+    font-size: 22px;
+  }
+
+  .contact-info p {
+    font-size: 12px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .contact-form button {
+    font-size: 13px;
+    padding: 8px;
+  }
+}

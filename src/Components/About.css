@@ -105,3 +105,77 @@
   }
 
 }
+/* Base CSS already hai jo aap ne diya */
+
+/* Responsive improvements */
+
+/* Medium screens (tablet) */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px; /* thoda kam gap */
+    width: 90%; /* thoda zyada width use karo */
+  }
+
+  .about-text h1 {
+    font-size: 36px; /* thoda chota heading */
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+
+  .about-image img {
+    width: 220px;
+    margin-top: 20px;
+  }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 600px) {
+  .about-container {
+    gap: 20px;
+    width: 95%;
+    padding: 20px 0;
+  }
+
+  .about-text h1 {
+    font-size: 28px;
+  }
+
+  .about-text p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .about-text button {
+    padding: 10px 22px;
+    font-size: 14px;
+  }
+
+  .about-image img {
+    width: 180px;
+    margin-top: 15px;
+  }
+}
+
+/* Extra small screens (very small mobile) */
+@media (max-width: 400px) {
+  .about-text h1 {
+    font-size: 24px;
+  }
+
+  .about-text p {
+    font-size: 13px;
+  }
+
+  .about-text button {
+    padding: 8px 18px;
+    font-size: 13px;
+  }
+
+  .about-image img {
+    width: 150px;
+  }
+}

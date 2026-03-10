@@ -33,3 +33,101 @@
 .nav-links a:hover{
   color: #00ffff;
 }
+/* Base CSS aapne diya hai */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 15px 40px;
+}
+
+.logo{
+  color: white;
+  font-size: 24px;
+}
+
+.nav-links{
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover{
+  color: #00ffff;
+}
+
+/* Responsive Navbar */
+
+/* Medium screens (tablet) */
+@media (max-width: 900px) {
+  .nav-links{
+    gap: 20px;
+  }
+  .nav-links a{
+    font-size: 16px;
+  }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 600px) {
+  .navbar{
+    padding: 15px 20px;
+  }
+
+  .nav-links{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 60%;
+    background: #111;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+  }
+
+  .nav-links.active{
+    right: 0;
+  }
+
+  .nav-links a{
+    font-size: 20px;
+  }
+
+  /* Hamburger icon */
+  .hamburger{
+    display: block;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .hamburger div{
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+    transition: 0.3s;
+  }
+}
+
+/* Hide hamburger on large screens */
+.hamburger{
+  display: none;
+}
