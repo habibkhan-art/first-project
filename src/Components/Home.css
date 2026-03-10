@@ -1,0 +1,54 @@
+.home{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color: white;
+  text-align: center;
+}
+
+/* Content Animation */
+.home-content{
+  animation: fadeUp 1.5s ease;
+}
+
+.title{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.subtitle{
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+/* Button */
+.btn{
+  padding: 12px 30px;
+  font-size: 18px;
+  border: none;
+  background: #00ffff;
+  color: black;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn:hover{
+  background: white;
+  transform: scale(1.1);
+}
+
+/* Animation */
+@keyframes fadeUp{
+  from{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
